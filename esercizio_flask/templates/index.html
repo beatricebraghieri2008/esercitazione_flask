@@ -5,11 +5,10 @@
     <title>Profilo Utente</title>
 </head>
 <body>
-    <h1>Informazioni Utente</h1>
-    <p><strong>Nome:</strong> {{ dati['Nome'] }}</p>
-    <p><strong>Cognome:</strong> {{ dati['Cognome'] }}</p>
-    <p><strong>Scuola:</strong> {{ dati['Scuola'] }}</p>
-    <p><strong>Hobby:</strong> {{ dati['Hobby'] }}</p>
-    <a href="/modifica">Modifica Profilo</a>
+    <h1>Nome e Cognome utente: {{df["Nome"] }} {{df["Cognome"] }}</h1>
+    <p>Scuola: {{ df['Scuola'] }}</p>
+    <p>Hobby: {{ df['Hobby'] }}</p>
+    <a href="{{url_for('modifica_profilo')}}">Modifica Dati Profilo</a>
+
 </body>
 </html>
