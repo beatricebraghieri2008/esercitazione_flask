@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificare dati profilo utente</title>
+</head>
+<body>
+   <h1>Modifica profilo</h1> 
+   <form method="post">
+    <label>Nome: <input type="text" name="Nome" value="{{ Nome.utente }}"></label><br>
+    <label>Cognome: <input type="text" name="Cognome" value="{{ Cognome.utente }}"></label><br>
+    <label>Scuola: <input type="text" name="Scuola" value="{{ dati.Scuola}}"></label><br>
+    <label>Hobby: <input type="text" name="Hobby" value="{{ utente.Hobby }}"></label><br>
+    <button type="submit">Salva modifiche</button>
+</form>
+</body>
+</html>
